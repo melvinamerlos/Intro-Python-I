@@ -22,3 +22,14 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+cal_args = input("Enter a month and year: ").split(" ")
+print(cal_args)
+
+
+def render_calendar(*args):
+    print(len(args))
+    d = datetime.now()
+
+
+render_calendar(*cal_args)
